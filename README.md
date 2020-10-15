@@ -4,8 +4,6 @@ Algorithm developed in the manuscript entitled “Vision-based robust control fr
 
 https://doi.org/10.1016/j.conengprac.2020.104630
 
-Please, download CARLA 0.9.3 from https://github.com/carla-simulator/carla/releases/tag/0.9.3, and place the folders in Experimental/learning/sources/carla folder. 
-
 # Dependencies
 •	Python 
 
@@ -17,7 +15,7 @@ Please, download CARLA 0.9.3 from https://github.com/carla-simulator/carla/relea
 
 •	MatplotLib 2.0.2
 
-•	CARLA 0.9.3
+•	CARLA 0.9.3: please, download CARLA 0.9.3 from https://github.com/carla-simulator/carla/releases/tag/0.9.3 
 
 # Training folder
 
@@ -36,5 +34,24 @@ To run the trainned CNN:
 
 # Test folder 
 
-The trained CNN is presented for testing. Please, open the learning folder and run sh ./scripts/model.sh
-For controlling the car 
+In the test folder our trained CNN and the hybrid control architecture are provided. To run our model: 
+
+1. Copy the folders docs, tensorblock and Test;
+
+2. Copy CARLA 0.9.3 in Test/sources/carla; 
+
+3. To run the CNN: 
+
+3.1. Open Test/players_reinforcement/player_PPO_2.py;
+
+3.2. Comment lines 79 and 80;
+
+4. To run the controllers: 
+
+4.1. Open Test/players_reinforcement/player_PPO_2.py;
+
+4.2. Uncomment lines 79 and 80;
+
+4.3. Select the gain in function lat_control(), line 31;
+
+5. Open Training folder and run sh ./scripts/load_model.sh
