@@ -42,16 +42,16 @@ In the test folder our trained CNN and the hybrid control architecture are provi
 
 3. To run the CNN: 
 
-3.1. Open Test/players_reinforcement/player_PPO_2.py;
+  3.1. Open Test/players_reinforcement/player_PPO_2.py;
 
-3.2. Comment lines 79 and 80;
+  3.2. Comment lines 79 and 80;
 
 4. To run the controllers: 
 
-4.1. Open Test/players_reinforcement/player_PPO_2.py;
+  4.1. Open Test/players_reinforcement/player_PPO_2.py;
 
-4.2. Uncomment lines 79 and 80;
+  4.2. Uncomment lines 79 and 80;
 
-4.3. Select the gain in function lat_control(), line 31;
+  4.3. Select the gain in function lat_control(), line 31;
 
 5. Open Training folder and run sh ./scripts/load_model.sh
