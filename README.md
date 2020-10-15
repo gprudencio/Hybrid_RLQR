@@ -8,15 +8,31 @@ Please, download CARLA 0.9.3 from https://github.com/carla-simulator/carla/relea
 
 # Dependencies
 •	Python 
+
 •	Tensorflow 1.4
+
 •	Pygame 1.9.4
+
 •	NumPy 
+
 •	MatplotLib 2.0.2
+
 •	CARLA 0.9.3
 
 # Training folder
 
-For training the CNN, please open learning folder and run sh ./scripts/script_TRAIN_CARLA_PPO.sh 
+To train our CNN design: 
+
+1. Copy the folders docs, tensorblock and Training; 
+
+2. Copy CARLA 0.9.3 in Training/sources/carla 
+
+3. Open Training folder and run sh ./scripts/script_TRAIN_CARLA_PPO.sh
+
+
+To run the trainned CNN: 
+
+1. Open Training folder and run sh ./scripts/load_model.sh
 
 # Test folder 
 
